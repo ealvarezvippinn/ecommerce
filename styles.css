@@ -82,7 +82,6 @@ body {
     column-gap: 20px;
     row-gap: 100px;
     grid-template-rows: repeat(3, 1fr);
-    background-color: aqua;
     justify-content: space-evenly;
 }
 
