@@ -69,19 +69,10 @@ body {
     border: 1px #E1E8EB solid
 }
 
-/* CONTENEDOR DE CARDS */
-/* .container-grid {
-    display: grid;
-    grid-template-columns: 302px 302px;
-    grid-template-rows: 452px 452px;
-} */
-
 .contenedor-grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    column-gap: 20px;
-    row-gap: 100px;
-    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
     justify-content: space-evenly;
 }
 
