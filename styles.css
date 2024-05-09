@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+
+.button-link {
+    background-color: #AFD198;
+    padding: 8px 16px;
+    border-radius: 32px;
+    margin-top: 16px;
+
+    &:hover {
+        background-color: #75A47F;
+        cursor: pointer;
+    }
+}
+
+.contanedor-card {
+    width: 300px;
+    height: 450px;
+    border: #B2C8BA solid 1px;
+    background-color: #FFFFFF;
+
+    button {
+        width: 100%;
+        padding: 8px 0px;
+        background-color: #8CB53A;
+        border: none;
+        border-radius: 64px;
+
+        &:hover {
+            background-color: #2D7D19;
+            color: white
+        }
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .title {
+        margin: 6px 0px;
+        text-align: center;
+    }
+
+    .contenedor-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        padding: 16px;
+
+        span {
+            color: #40513B;
+        }
+
+    }
+
+    h1 {
+        margin: 0
+    }
+}
+
+
+
+.contanedor-card:hover {
+    border: 1px #E1E8EB solid
+}
+
+/* CONTENEDOR DE CARDS */
+/* .container-grid {
+    display: grid;
+    grid-template-columns: 302px 302px;
+    grid-template-rows: 452px 452px;
+} */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+    row-gap: 100px;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: aqua;
+    justify-content: space-evenly;
+}
+
+/* EJEMPLO GRID-ITEMS */
+.contenedor-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    height: 700px;
+    margin: 0px 16px 48px;
+
+    div {
+        width: 100%;
+        overflow: hidden;
+        filter: brightness(60%);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .item-1 {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3
+    }
+
+}
+
+.nav {
+    height: 82px;
+    background-color: #FFFFFF;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 5px 0px #B2C8BA;
+    -webkit-box-shadow: 1px 3px 5px 0px #B2C8BA;
+    -moz-box-shadow: 1px 3px 5px 0px #B2C8BA;
+
+    span,
+    a {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    a {
+        margin: 0px 16px
+    }
+
+}
+
+.contenedor-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
