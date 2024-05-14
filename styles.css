@@ -133,3 +133,25 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+/* Repaso de grid */
+.container-repaso-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 16px;
+    grid-template-rows: 500px 400px;
+
+    .div-sucus {
+        background-color: pink;
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+    }
+
+    .div-interior {
+        background-color: rgb(76, 17, 116);
+    }
+
+    .div-colgantes {
+        background-color: lightgreen;
+    }
+}
